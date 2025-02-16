@@ -14,6 +14,8 @@ class _WalletInputState extends State<WalletInput> {
     super.initState();
   }
 
+  int _selectedIndex = 1;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,24 +28,92 @@ class _WalletInputState extends State<WalletInput> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [Color(0xFF0D0D0D), Color(0xFF003366)],
-            begin: Alignment.topCenter, // Dégradé plus équilibré
+            begin: Alignment.topCenter,
             end: Alignment.bottomRight,
             stops: [0.1, 0.8], // Transition plus fluide
           ),
         ),
         child: Column(
           children: [
-            Text(
-              "\$202.05",
-              style: GoogleFonts.inter(
-                fontSize: 50,
-                color: Colors.white,
-                fontWeight: FontWeight.w700,
+            Expanded(
+              child: Align(
+                alignment: Alignment.topCenter,
+                child: Text(
+                  "\ ",
+                  style: GoogleFonts.inter(
+                    fontSize: 50,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
-            )
+            ),
+            if (_selectedIndex == 1)
+              Divider(
+                color: Colors.white70,
+                thickness: 3,
+                endIndent: 180,
+                indent: 180,
+              ),
+            if (_selectedIndex == 0)
+              Divider(
+                color: Colors.white70,
+                thickness: 3,
+                endIndent: 320,
+                indent: 40,
+              ), // Ligne fine blanche
+          ],
+        ),
+      ),
+      bottomNavigationBar: Theme(
+        data: Theme.of(context).copyWith(
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          splashFactory: NoSplash.splashFactory,
+        ),
+        child: BottomNavigationBar(
+          iconSize: 30,
+          backgroundColor: Color(0xFF003366), // Fond noir
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.white60,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          type: BottomNavigationBarType.fixed,
+          currentIndex: _selectedIndex,
+          onTap: (index) {
+            setState(() {
+              _selectedIndex = index;
+            });
+          },
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.candlestick_chart),
+              label: "",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: "",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.swap_horiz_outlined),
+              label: "",
+            ),
           ],
         ),
       ),
     );
   }
+
+  // Widget _buildPage(int index) {
+  //   switch (index) {
+  //     case 0:
+  //       return ChartPage(); // Remplace par ta page de graphiques
+  //     case 1:
+  //       return WalletPage(); // Remplace par ta page de wallet
+  //     case 2:
+  //       return SettingsPage(); // Remplace par ta page de paramètres
+  //     default:
+  //       return Container();
+  //   }
+  // }
 }
