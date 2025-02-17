@@ -1,11 +1,21 @@
-# 🚀 **Crypto Wallet**
+# 🐦‍🔥 **Huppes Wallet**  
 
-## 🔥 **Introduction**
-**Crypto Wallet** est un portefeuille sécurisé et intuitif permettant de **stocker, envoyer et recevoir** des cryptomonnaies en toute simplicité.  
-Il prend en charge **plusieurs blockchains** et intègre une **authentification avancée** pour une sécurité maximale.
+## 🔥 **Introduction**  
+**Huppes Wallet** is an **open-source**, **secure**, and **user-friendly** wallet for **storing, sending, and receiving** cryptocurrencies.  
+My goal is to ensure support for all blockchains in the future.
 
 ---
 
-## 🎯 **Fonctionnalités**
-✔️ **📲 Gestion des actifs** : **Stockez et visualisez** vos cryptos en temps réel.  
-✔️ **🔄
+## 🎯 **Features**  
+
+✔️ **📲 Asset Management** – **Store and track** your crypto portfolio in real-time.  
+✔️ **🔄 Secure Transactions** – **Send and receive** tokens with ease.  
+✔️ **🌍 Multi-Blockchain Support** – Works with **Bitcoin, Ethereum, Xrp, Solana, Bnb, Avax** and many many more.  
+✔️ **📊 Transaction History** – Easily keep track of your transfers.  
+✔️ **⚡ DApp Browser** – Access **decentralized applications (DApps)** directly from your wallet.  
+✔️ **💱 Built-in Swaps** – Exchange cryptocurrencies without leaving the app.  
+✔️ **🛡️ Offline Mode** – View your balance even when you're **offline**.  
+✔️ **🚀 NFT Support** – Manage and display your **NFTs** within the wallet.  
+✔️ **🔎 Smart Search** – Quickly find tokens and transaction details.  
+
+---
