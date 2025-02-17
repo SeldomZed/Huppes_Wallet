@@ -20,7 +20,7 @@ My goal is to ensure support for **EVERY SINGLE**  blockchains in the future.
 
 ✔️ **🖼️ NFT Support** – Manage and display your **NFTs** within the wallet.  
 
-✔️ **🚀 Latest News** –  Built-in Up-to-date economics & crypto news.
+✔️ **🚀 Latest News** –  Keep Up-to-date with built-in economics & crypto news.
 
 ✔️ **🌐 DApp Browser** – Access **decentralized applications (DApps)** directly from your wallet.  
 
