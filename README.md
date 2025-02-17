@@ -1,4 +1,4 @@
- # 🐦‍🔥 **Huppes Wallet**  
+ #                                     🐦‍🔥 **Huppes Wallet**  
 
 ## 🔥 **Introduction**  
 An **open-source** and **user-friendly** wallet for **storing, sending, and receiving** cryptocurrencies.  
