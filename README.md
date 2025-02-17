@@ -4,7 +4,7 @@
 An **open-source** and **user-friendly** wallet for **storing, sending, and receiving** cryptocurrencies.  
 My goal is to ensure support for **EVERY** single blockchains in the future.
 
-
+---
 
 ## 🎯 **Features**  
 
