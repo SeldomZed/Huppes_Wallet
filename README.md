@@ -1,7 +1,7 @@
 # 🐦‍🔥 **Huppes Wallet**  
 
 ## 🔥 **Introduction**  
-**Huppes Wallet** is an **open-source**, **secure**, and **user-friendly** wallet for **storing, sending, and receiving** cryptocurrencies.  
+An **open-source** and **user-friendly** wallet for **storing, sending, and receiving** cryptocurrencies.  
 My goal is to ensure support for all blockchains in the future.
 
 ---
