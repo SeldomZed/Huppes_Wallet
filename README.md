@@ -14,7 +14,7 @@ My goal is to ensure support for **EVERY** single blockchains in the future.
 
 ✔️ **🔄 Secure Transactions** – **Send and receive** tokens with ease.  
 
-✔️ **🌍 Multi-Blockchain Support** – Works with **Bitcoin, Ethereum, Xrp, Solana, Bnb, Avax** and many many more.  
+✔️ **🌍 Multi-Blockchain Support** – Works with **Bitcoin, Ethereum, Xrp, Solana** and many many more.  
 
 ✔️ **📊 Transaction History** – Easily keep track of your transfers.  
 
