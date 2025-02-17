@@ -52,15 +52,22 @@ class _WalletInputState extends State<WalletInput> {
               Divider(
                 color: Colors.white70,
                 thickness: 3,
-                endIndent: 180,
-                indent: 180,
+                endIndent: 183,
+                indent: 183,
               ),
             if (_selectedIndex == 0)
               Divider(
                 color: Colors.white70,
                 thickness: 3,
-                endIndent: 320,
-                indent: 40,
+                endIndent: 322,
+                indent: 45,
+              ),
+            if (_selectedIndex == 2)
+              Divider(
+                color: Colors.white70,
+                thickness: 3,
+                endIndent: 46,
+                indent: 321,
               ), // Ligne fine blanche
           ],
         ),
