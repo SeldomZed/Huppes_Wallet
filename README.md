@@ -10,7 +10,7 @@ My goal is to ensure support for **EVERY SINGLE**  blockchains in the future.
 
 ## 🎯 **Targeted Features**  
 
-✔️ **🔄 Efficient Transactions** – **Send and receive** tokens with ease.  
+✔️ **🔁 Efficient Transactions** – **Send and receive** tokens with ease.  
 
 ✔️ **📲 Asset Management** – **Store and track** your crypto portfolio in real-time.  
 
@@ -18,9 +18,11 @@ My goal is to ensure support for **EVERY SINGLE**  blockchains in the future.
 
 ✔️ **🔎 Smart Search** – Quickly find tokens and transaction details.  
 
-✔️ **🚀 NFT Support** – Manage and display your **NFTs** within the wallet.  
+✔️ **🖼️ NFT Support** – Manage and display your **NFTs** within the wallet.  
 
-✔️ **⚡ DApp Browser** – Access **decentralized applications (DApps)** directly from your wallet.  
+✔️ **📢 Economics and Cryptos News** – Manage and display your **NFTs** within the wallet.  
+
+✔️ **🌐 DApp Browser** – Access **decentralized applications (DApps)** directly from your wallet.  
 
 ✔️ **🌍 Multi-Blockchain Support** – Works with **Bitcoin, Ethereum, Xrp, Solana** and many many more.  
 
