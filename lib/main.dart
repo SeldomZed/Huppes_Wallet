@@ -1,4 +1,4 @@
-import 'package:crypto_wallet/ressources/myTheme.dart';
+import 'package:crypto_wallet/ressources/mytheme.dart';
 import 'package:crypto_wallet/screens/baseScreen.dart';
 import 'package:flutter/material.dart';
 
