@@ -1,5 +1,5 @@
-import 'package:crypto_wallet/ressources/mytheme.dart';
-import 'package:crypto_wallet/screens/baseScreen.dart';
+import 'package:Huppes_Wallet/ressources/myTheme.dart';
+import 'package:Huppes_Wallet/screens/baseScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

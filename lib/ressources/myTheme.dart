@@ -4,8 +4,7 @@ class MyTheme {
   static Color nodaDark = const Color(0xFF000737);
   static Color nodaLight = const Color(0xFF0095e4);
   static Color nodaMiddle = const Color(0xFF003e8b);
-  static LinearGradient nodaLinearGradient =
-      const LinearGradient(colors: [Color(0xFF0095e4), Color(0xFF042241)]);
+  static LinearGradient nodaLinearGradient = const LinearGradient(colors: [Color(0xFF0095e4), Color(0xFF042241)]);
 
   static ColorScheme colorScheme = ColorScheme(
     brightness: Brightness.light,

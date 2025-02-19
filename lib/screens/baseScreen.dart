@@ -1,8 +1,6 @@
-// ignore: file_names
-// ignore: file_names
-import 'package:crypto_wallet/screens/datascreen.dart';
-import 'package:crypto_wallet/screens/homeScreen.dart';
-import 'package:crypto_wallet/screens/swapScreen.dart';
+import 'package:Huppes_Wallet/screens/dataScreen.dart';
+import 'package:Huppes_Wallet/screens/homeScreen.dart';
+import 'package:Huppes_Wallet/screens/swapScreen.dart';
 import 'package:flutter/material.dart';
 
 class BaseScreen extends StatefulWidget {
@@ -25,13 +23,16 @@ class _BaseScreenState extends State<BaseScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
-      appBar: AppBar(backgroundColor: const Color(0xFF043A70)),
+      appBar: AppBar(backgroundColor: const Color(0xFF0D0D0D)),
       body: Container(
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF043A70), Color(0xFF061226)],
+            colors: [
+              Color(0xFF0D0D0D),
+              Color(0xFF1E1E1E),
+            ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             stops: [0.1, 0.8],
@@ -48,9 +49,7 @@ class _BaseScreenState extends State<BaseScreen> {
         child: ClipRRect(
           child: BottomNavigationBar(
             iconSize: 30,
-            backgroundColor: const Color(0xFF061226),
-            selectedItemColor: Colors.white,
-            unselectedItemColor: Colors.white70,
+            backgroundColor: const Color(0xFF1E1E1E),
             showSelectedLabels: false,
             showUnselectedLabels: false,
             type: BottomNavigationBarType.fixed,
@@ -60,23 +59,42 @@ class _BaseScreenState extends State<BaseScreen> {
                 _selectedIndex = index;
               });
             },
-            items: const [
+            items: [
               BottomNavigationBarItem(
-                icon: Icon(Icons.candlestick_chart),
+                icon: GradientIcon(Icons.candlestick_chart, _selectedIndex == 0),
                 label: "",
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.home),
+                icon: GradientIcon(Icons.home, _selectedIndex == 1),
                 label: "",
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.swap_horiz_outlined),
+                icon: GradientIcon(Icons.swap_horiz_outlined, _selectedIndex == 2),
                 label: "",
               ),
             ],
           ),
         ),
       ),
+    );
+  }
+
+  Widget GradientIcon(IconData icon, bool isSelected) {
+    return ShaderMask(
+      shaderCallback: (bounds) => LinearGradient(
+        colors: isSelected
+            ? [
+                Color(0xffead99c),
+                Color(0xFFb28942),
+              ]
+            : [
+                Color(0xB0EAD99C),
+                Color(0x99B28942),
+              ],
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+      ).createShader(bounds),
+      child: Icon(icon, color: Colors.white, size: 30),
     );
   }
 }
