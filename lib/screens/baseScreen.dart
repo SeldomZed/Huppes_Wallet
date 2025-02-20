@@ -31,7 +31,7 @@ class _BaseScreenState extends State<BaseScreen> {
           gradient: LinearGradient(
             colors: [
               Color(0xFF0D0D0D),
-              Color(0xFF1E1E1E),
+              Color(0xFF0D0D0D), // 0xFF1E1E1E
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -49,7 +49,7 @@ class _BaseScreenState extends State<BaseScreen> {
         child: ClipRRect(
           child: BottomNavigationBar(
             iconSize: 30,
-            backgroundColor: const Color(0xFF1E1E1E),
+            backgroundColor: const Color(0xFF0D0D0D), // 0xFF1E1E1E
             showSelectedLabels: false,
             showUnselectedLabels: false,
             type: BottomNavigationBarType.fixed,
@@ -61,7 +61,8 @@ class _BaseScreenState extends State<BaseScreen> {
             },
             items: [
               BottomNavigationBarItem(
-                icon: GradientIcon(Icons.candlestick_chart, _selectedIndex == 0),
+                icon:
+                    GradientIcon(Icons.candlestick_chart, _selectedIndex == 0),
                 label: "",
               ),
               BottomNavigationBarItem(
@@ -69,7 +70,8 @@ class _BaseScreenState extends State<BaseScreen> {
                 label: "",
               ),
               BottomNavigationBarItem(
-                icon: GradientIcon(Icons.swap_horiz_outlined, _selectedIndex == 2),
+                icon: GradientIcon(
+                    Icons.swap_horiz_outlined, _selectedIndex == 2),
                 label: "",
               ),
             ],
