@@ -1,4 +1,5 @@
 import 'package:Huppes_Wallet/screens/dataScreen.dart';
+import 'package:Huppes_Wallet/screens/historyScreen.dart';
 import 'package:Huppes_Wallet/screens/homeScreen.dart';
 import 'package:Huppes_Wallet/screens/swapScreen.dart';
 import 'package:flutter/material.dart';
@@ -11,12 +12,13 @@ class BaseScreen extends StatefulWidget {
 }
 
 class _BaseScreenState extends State<BaseScreen> {
-  int _selectedIndex = 1;
+  int _selectedIndex = 0;
 
   final List<Widget> _pages = [
     DataScreen(),
     HomeScreen(),
     SwapScreen(),
+    Historyscreen()
   ];
 
   @override
@@ -48,7 +50,7 @@ class _BaseScreenState extends State<BaseScreen> {
         ),
         child: ClipRRect(
           child: BottomNavigationBar(
-            iconSize: 30,
+            iconSize: 25,
             backgroundColor: const Color(0xFF0D0D0D), // 0xFF1E1E1E
             showSelectedLabels: false,
             showUnselectedLabels: false,
@@ -61,17 +63,25 @@ class _BaseScreenState extends State<BaseScreen> {
             },
             items: [
               BottomNavigationBarItem(
-                icon:
-                    GradientIcon(Icons.candlestick_chart, _selectedIndex == 0),
+                icon: GradientIcon(Icons.language, _selectedIndex == 0),
                 label: "",
               ),
               BottomNavigationBarItem(
-                icon: GradientIcon(Icons.home, _selectedIndex == 1),
+                icon:
+                    GradientIcon(Icons.candlestick_chart, _selectedIndex == 1),
+                label: "",
+              ),
+              BottomNavigationBarItem(
+                icon: GradientIcon(Icons.home, _selectedIndex == 2),
                 label: "",
               ),
               BottomNavigationBarItem(
                 icon: GradientIcon(
-                    Icons.swap_horiz_outlined, _selectedIndex == 2),
+                    Icons.swap_horiz_outlined, _selectedIndex == 3),
+                label: "",
+              ),
+              BottomNavigationBarItem(
+                icon: GradientIcon(Icons.history, _selectedIndex == 0),
                 label: "",
               ),
             ],
@@ -96,7 +106,7 @@ class _BaseScreenState extends State<BaseScreen> {
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
       ).createShader(bounds),
-      child: Icon(icon, color: Colors.white, size: 30),
+      child: Icon(icon, color: Colors.white, size: 27),
     );
   }
 }

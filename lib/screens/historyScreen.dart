@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class DataScreen extends StatefulWidget {
-  const DataScreen({super.key});
+class Historyscreen extends StatefulWidget {
+  const Historyscreen({super.key});
 
   @override
-  State<DataScreen> createState() => _DataScreenState();
+  State<Historyscreen> createState() => _DataScreenState();
 }
 
-class _DataScreenState extends State<DataScreen> {
+class _DataScreenState extends State<Historyscreen> {
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        "Data",
+        "History",
         style: TextStyle(color: Colors.white, fontSize: 30),
       ),
     );

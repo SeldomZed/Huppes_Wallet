@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Column(
       children: [
         Text(
-          "",
+          "Home",
           style: TextStyle(
             color: Colors.white,
             fontSize: 50,
