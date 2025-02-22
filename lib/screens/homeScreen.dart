@@ -10,17 +10,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          "Home",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 50,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-      ],
+    return Center(
+      child: Text(
+        "Home",
+        style: TextStyle(color: Colors.white, fontSize: 30),
+      ),
     );
   }
 }

@@ -1,3 +1,5 @@
+import 'package:Huppes_Wallet/ressources/myTheme.dart';
+import 'package:Huppes_Wallet/screens/browserScreen.dart';
 import 'package:Huppes_Wallet/screens/dataScreen.dart';
 import 'package:Huppes_Wallet/screens/historyScreen.dart';
 import 'package:Huppes_Wallet/screens/homeScreen.dart';
@@ -12,13 +14,14 @@ class BaseScreen extends StatefulWidget {
 }
 
 class _BaseScreenState extends State<BaseScreen> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 2;
 
   final List<Widget> _pages = [
+    BrowserScreen(),
     DataScreen(),
     HomeScreen(),
     SwapScreen(),
-    Historyscreen()
+    Historyscreen(),
   ];
 
   @override
@@ -81,32 +84,13 @@ class _BaseScreenState extends State<BaseScreen> {
                 label: "",
               ),
               BottomNavigationBarItem(
-                icon: GradientIcon(Icons.history, _selectedIndex == 0),
+                icon: GradientIcon(Icons.history, _selectedIndex == 4),
                 label: "",
               ),
             ],
           ),
         ),
       ),
-    );
-  }
-
-  Widget GradientIcon(IconData icon, bool isSelected) {
-    return ShaderMask(
-      shaderCallback: (bounds) => LinearGradient(
-        colors: isSelected
-            ? [
-                Color(0xffead99c),
-                Color(0xFFb28942),
-              ]
-            : [
-                Color(0xB0EAD99C),
-                Color(0x99B28942),
-              ],
-        begin: Alignment.topCenter,
-        end: Alignment.bottomCenter,
-      ).createShader(bounds),
-      child: Icon(icon, color: Colors.white, size: 27),
     );
   }
 }
